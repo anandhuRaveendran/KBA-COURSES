@@ -1,7 +1,8 @@
+import Notfound from "../components/Notfound"
 
 const NotFoundPage = () => {
   return (
-    <div>NotFoundPage</div>
+    <Notfound/>
   )
 }
 

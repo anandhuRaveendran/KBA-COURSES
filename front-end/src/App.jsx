@@ -11,6 +11,7 @@ import CoursesPage from "./pages/CoursesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AddCoursePage from "./pages/AddCoursePage";
 import MainLayout from "./layouts/MainLayout";
+import LearnMorePage from "./pages/LearnMorePage";
 
 function App() {
   const router = createBrowserRouter(
@@ -21,6 +22,8 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/add-course" element={<AddCoursePage />} />
+          <Route path="/learnmore" element={<LearnMorePage />} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </>

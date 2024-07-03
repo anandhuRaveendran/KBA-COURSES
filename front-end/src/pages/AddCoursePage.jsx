@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import AddCourses from '../components/AddCourses'
 
 const AddCoursePage = () => {
   return (
-    <div>AddCoursePage</div>
-  )
+<AddCourses/>  )
 }
 
 export default AddCoursePage

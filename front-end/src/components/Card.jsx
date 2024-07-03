@@ -33,7 +33,7 @@ const CourseCard = ({ course }) => {
           More
         </button>
         <a
-          href="#"
+          href="/learnmore"
           className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 self-start mx-5"
         >
           Learn More

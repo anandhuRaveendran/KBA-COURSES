@@ -10,7 +10,7 @@ const HomePage = () => {
       <CourseCards isHome = {true} />
       <ViewAllCourses />
       
-    </>
+    </> 
   );
 };
 
