@@ -22,7 +22,7 @@ function App() {
       <>
               <Route path="/" element={<AuthLayout />}>
           <Route index element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/sign-up" element={<SignupPage />} />
 
         </Route>
         <Route path="/" element={<MainLayout />}>
