@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
-
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
@@ -51,7 +50,7 @@ router.post("/login", async (req, res) => {
         expiresIn: "1h",
       }
     );
-
+    console.log(token)
     res.cookie("Authtoken", token);
     res.json({
       status: true,
@@ -59,7 +58,7 @@ router.post("/login", async (req, res) => {
       token,
       userType: user.userType
     });
-    //  console.log('/login in the bakend res', res)
+      // console.log('/login in the bakend res', res)
     return res;
   } catch (error) {
     console.log(error);

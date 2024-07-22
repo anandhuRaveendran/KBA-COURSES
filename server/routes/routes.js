@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const courses = require("../models/courses");
-const verifyToken = require("../middleware/authMiddleware")
+const verifyToken = require('../middleware/authMiddleware');
+
 router.get("/courses", async (req, res) => {
+  console.log(req.body)
   const details = await courses.find({});
   res.json(details);
 });
@@ -12,7 +14,7 @@ router.get("/courses/:id", async (req, res) => {
   const details = await courses.findOne({ courseId: courseId }, { _id: 0 });
   res.json(details);
 });
-router.post("/courses",verifyToken, async (req, res) => {
+router.post("/courses", async (req, res) => {
   try {
     const data = req.body;
     const result = await courses.create(data);

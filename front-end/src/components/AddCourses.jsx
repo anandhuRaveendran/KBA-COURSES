@@ -14,7 +14,7 @@ const AddCourses = () => {
 
   const notify = () => toast("Wow so easy!");
 const handleSubmit= async()=>{
-  const response = await fetch('http://localhost:5000/api/addQuiz', {
+  const response = await fetch('/api/courses', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

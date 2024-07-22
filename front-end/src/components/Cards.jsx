@@ -8,7 +8,7 @@ const CourseCards = ({ isHome = false }) => {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const res = await fetch('http://localhost:5000/courses');
+        const res = await fetch('/api/courses');
         const data =await res.json();
         setCourses(data);
       } catch (error) {
